@@ -3,11 +3,13 @@
 # top-most EditorConfig file
 root = true
 
-[*]
+[*.{js,jsx,ts,tsx,vue,css}]
 indent_style = space
 indent_size = 2
 end_of_line = lf
 charset = utf-8
+quote_type = single
+max_line_length = 100
 trim_trailing_whitespace = true
 insert_final_newline = false
 
