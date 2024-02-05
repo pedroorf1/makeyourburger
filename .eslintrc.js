@@ -18,6 +18,7 @@ module.exports = {
     quotes: [2, 'single', { avoidEscape: true }],
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'jsx-a11y/img-has-alt': 'off'
+    'jsx-a11y/img-has-alt': 'off',
+    'vue/multi-word-component-names': 'off',
   },
 };
