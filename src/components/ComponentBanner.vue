@@ -25,11 +25,11 @@ export default {
   top: -4px;
   align-items: center;
   justify-content: flex-start;
-  h1 {
-    color: white;
-    font-size: 3em;
-    margin-left: 10%;
-    text-align: center;
-  }
+}
+.main-banner h1 {
+  color: white;
+  font-size: 3em;
+  margin-left: 10%;
+  text-align: center;
 }
 </style>

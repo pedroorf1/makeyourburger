@@ -36,7 +36,6 @@ a:hover {
 .main-container {
   min-height: 250px;
   margin: 50px;
-  page-break-after: 20px;
 }
 h1 {
   text-align: center;

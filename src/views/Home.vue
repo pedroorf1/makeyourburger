@@ -3,17 +3,23 @@
     <ComponentBanner />
     <div class="main-container">
       <h1>Monte o seu burger:</h1>
-      <p>Formulario</p>
+      <ComponentBurgerForm />
     </div>
   </div>
 </template>
 
 <script>
 import ComponentBanner from '../components/ComponentBanner.vue';
+import ComponentBurgerForm from '../components/ComponentBurgerForm.vue';
 export default {
   name: 'home',
-  components: { ComponentBanner },
+  components: { ComponentBanner, ComponentBurgerForm },
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+</style>
