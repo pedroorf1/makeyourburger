@@ -1,11 +1,11 @@
 <template>
   <div class="form-container">
-    <p>Mensagem</p>
+    <ComponentMessage :message="msg" />
     <div>
       <form id="burger-form">
         <div class="input-container">
           <label for="nome">Nome do cliente:</label>
-          <input type="text" id="nome" name="nome" v-model="name" placeholder="Digite seu nome" />
+          <input type="text" id="nome" name="nome" v-model="nome" placeholder="Digite seu nome" />
         </div>
         <div class="input-container">
           <label for="pao">Escolha o pão:</label>
@@ -37,15 +37,19 @@
           </div>
         </div>
         <div class="input-container">
-          <button type="button">Criar Amburger</button>
+          <button type="button" @click.stop="createBurger">Criar Amburger</button>
         </div>
       </form>
     </div>
   </div>
 </template>
 <script>
+import ComponentMessage from './ComponentMessage.vue';
 export default {
   name: 'Form',
+  components: {
+    ComponentMessage,
+  },
   data() {
     return {
       paes: null,
@@ -55,7 +59,6 @@ export default {
       pao: null,
       carne: null,
       opcionais: [],
-      status: 'Solicitado',
       msg: null,
     };
   },
@@ -66,7 +69,43 @@ export default {
       this.paes = data.paes;
       this.carnes = data.carnes;
       this.opcionaisData = data.opcionais;
-      console.log(data);
+    },
+    async createBurger(e) {
+      e.preventDefault();
+
+      const data = {
+        nome: this.nome,
+        pao: this.pao,
+        carne: this.carne ? this.carne : undefined,
+        Opcionais: Array.from(this.opcionais),
+        status: 'Solicitado',
+      };
+
+      const dataJson = JSON.stringify(data);
+      try {
+        const response = await fetch('http://localhost:3000/burgers', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: dataJson,
+        });
+        const pedido = await response.json();
+
+        this.msg = `O pedido Nº${pedido.id} foi realizado com sucesso!`;
+
+        // Limpa os campos
+        this.nome = '';
+        this.pao = '';
+        this.carne = '';
+        this.opcionais = [];
+        // Limpa a mensagem
+        setTimeout(() => {
+          this.msg = null;
+        }, 3000);
+      } catch (error) {
+        this.msg = 'Erro ao realizar pedido!';
+      }
     },
   },
   mounted() {
