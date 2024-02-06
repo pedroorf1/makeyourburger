@@ -1,5 +1,5 @@
 <template>
-  <h1>PEDIDOS</h1>
+  <h1 class="main-container">PEDIDOS</h1>
 </template>
 
 <script>
