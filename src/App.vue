@@ -25,6 +25,7 @@ body {
   color: rgb(35, 35, 35);
   font-family: 'roboto', 'Arial', sans-serif;
 }
+
 a {
   text-decoration: none;
   color: #006eff;
@@ -34,7 +35,7 @@ a:hover {
   color: #0056b3;
 }
 .main-container {
-  min-height: 250px;
+  min-height: 58vh;
   margin: 50px;
 }
 h1 {
