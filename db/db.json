@@ -79,159 +79,6 @@
   ],
   "burgers": [
     {
-      "id": "a20a",
-      "nome": "Pedro Onofre Ribeiro Filho",
-      "pao": "3 Queijos",
-      "carne": "Alcatra",
-      "Opcionais": [
-        "Bacon",
-        "Cheddar",
-        "Salame",
-        "Pepino"
-      ],
-      "status": "Solicitado"
-    },
-    {
-      "id": "33b2",
-      "nome": "Pedro Onofre Ribeiro Filho",
-      "pao": "Italiano Branco",
-      "carne": "Picanha",
-      "Opcionais": [
-        "Bacon",
-        "Cheddar",
-        "Salame"
-      ],
-      "status": "Solicitado"
-    },
-    {
-      "id": "f50e",
-      "nome": "Pedro Onofre Ribeiro Filho",
-      "pao": "Italiano Branco",
-      "carne": "Alcatra",
-      "Opcionais": [
-        "Bacon",
-        "Cheddar",
-        "Salame"
-      ],
-      "status": "Solicitado"
-    },
-    {
-      "id": "0557",
-      "nome": "Pedro Onofre Ribeiro Filho",
-      "pao": "Italiano Branco",
-      "carne": "Alcatra",
-      "Opcionais": [
-        "Bacon",
-        "Cheddar"
-      ],
-      "status": "Solicitado"
-    },
-    {
-      "id": "7e9d",
-      "nome": "Pedro Onofre Ribeiro Filho",
-      "pao": "3 Queijos",
-      "carne": "Picanha",
-      "Opcionais": [
-        "Bacon",
-        "Cheddar",
-        "Salame"
-      ],
-      "status": "Solicitado"
-    },
-    {
-      "id": "8251",
-      "nome": "Eletrônicos",
-      "pao": "3 Queijos",
-      "carne": "Picanha",
-      "Opcionais": [
-        "Bacon",
-        "Salame"
-      ],
-      "status": "Solicitado"
-    },
-    {
-      "id": "a8a2",
-      "nome": "Eletrônicos",
-      "pao": "3 Queijos",
-      "carne": "Picanha",
-      "Opcionais": [
-        "Bacon",
-        "Cheddar",
-        "Salame"
-      ],
-      "status": "Solicitado"
-    },
-    {
-      "id": "c1a9",
-      "nome": "Eletrônicos",
-      "pao": "3 Queijos",
-      "carne": "Picanha",
-      "Opcionais": [
-        "Bacon",
-        "Cheddar",
-        "Salame"
-      ],
-      "status": "Solicitado"
-    },
-    {
-      "id": "e606",
-      "nome": "Eletrônicos",
-      "pao": "3 Queijos",
-      "carne": "Picanha",
-      "Opcionais": [
-        "Bacon",
-        "Cheddar",
-        "Salame"
-      ],
-      "status": "Solicitado"
-    },
-    {
-      "id": "6b25",
-      "nome": "Pedro Onofre Ribeiro Filho",
-      "pao": "Parmesão e Orégano",
-      "carne": "Alcatra",
-      "Opcionais": [
-        "Bacon",
-        "Cheddar"
-      ],
-      "status": "Solicitado"
-    },
-    {
-      "id": "bb19",
-      "nome": "Pedro Onofre Ribeiro Filho",
-      "pao": "3 Queijos",
-      "carne": "Alcatra",
-      "Opcionais": [
-        "Bacon",
-        "Cheddar",
-        "Salame"
-      ],
-      "status": "Solicitado"
-    },
-    {
-      "id": "c696",
-      "nome": "Pedro Onofre Ribeiro Filho",
-      "pao": "Parmesão e Orégano",
-      "carne": "Alcatra",
-      "Opcionais": [
-        "Bacon",
-        "Cheddar",
-        "Salame"
-      ],
-      "status": "Solicitado"
-    },
-    {
-      "id": "d787",
-      "nome": "Eletrônicos",
-      "pao": "Parmesão e Orégano",
-      "carne": "Picanha",
-      "Opcionais": [
-        "Pepino",
-        "Cebola roxa"
-      ],
-      "status": "Solicitado"
-    },
-    {
       "id": "82e6",
       "nome": "Pedro Onofre Ribeiro Filho",
       "pao": "3 Queijos",
@@ -241,7 +88,30 @@
         "Cebola roxa",
         "Pepino"
       ],
-      "status": "Solicitado"
+      "status": "Finalizado"
+    },
+    {
+      "id": "6b8d",
+      "nome": "PEDRO ONOFRE RIBEIRO FILHO",
+      "pao": "Parmesão e Orégano",
+      "carne": "Veggie burger",
+      "Opcionais": [
+        "Salame",
+        "Cebola roxa"
+      ],
+      "status": "Em produção"
+    },
+    {
+      "id": "75ed",
+      "nome": "Pedro Onofre Ribeiro Filho",
+      "pao": "Italiano Branco",
+      "carne": "Maminha",
+      "Opcionais": [
+        "Cheddar",
+        "Salame",
+        "Tomate"
+      ],
+      "status": "Em produção"
     }
   ]
 }
